@@ -23,4 +23,5 @@ if ( 'output_mle' in params.keySet() ) {
     matrices="${params.mle_matrices}"
     integration_plot("${params.project_folder}/${params.output_mle}/mle_matrix/", promle.out.collect(), matrices)
   }
+}
 ```
