@@ -8,6 +8,7 @@ promle( data )
 integration_plot("${params.project_folder}/${params.output_mle}/", promle.out.collect(), matrices)
 ```
 - work around using the same process twice within a workflow
+  
 for example, this will not work because `promle` cannot call twice
 ```
 if ( 'output_mle' in params.keySet() ) {
