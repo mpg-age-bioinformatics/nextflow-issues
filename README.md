@@ -9,7 +9,7 @@ integration_plot("${params.project_folder}/${params.output_mle}/", promle.out.co
 ```
 - work around using the same process twice within a workflow
   
-for example, this will not work because `promle` cannot call twice
+for example, this will not work because `promle` cannot be called twice
 ```
 if ( 'output_mle' in params.keySet() ) {
   data = channel.fromPath( "${params.project_folder}/${params.output_mle}/*mle.sh" )
